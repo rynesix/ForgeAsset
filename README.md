@@ -1,74 +1,76 @@
-<!-- fallback_ForgeAsset_20260207084316_54550 -->
+# Pumpswap Volume Bot
 
-# ForgeAsset: Self-sustaining, containerized asset management system with autonomous self-healing, intelligent orchestration engine Implementation
-> Advanced typescript solution leveraging modern architecture patterns and cutting-edge technology.
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue)](https://github.com/vladmeeros/pumpswap-volume-bot)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-Self-sustaining, containerized asset management system with autonomous self-healing, intelligent orchestration engine. providing enterprise-grade ForgeAsset solutions.
+Pumpswap volume bot that makes endless buy and sell swaps to increase trading volume and promote your token at fast speed.
 
-ForgeAsset is designed to provide developers and professionals with a robust, efficient, and scalable solution for their typescript development needs. This implementation focuses on performance, maintainability, and ease of use, incorporating industry best practices and modern software architecture patterns.
+**Repository:** [https://github.com/vladmeeros/pumpswap-volume-bot](https://github.com/vladmeeros/pumpswap-volume-bot)
 
-The primary purpose of ForgeAsset is to streamline development workflows and enhance productivity through innovative features and comprehensive functionality. Whether you're building enterprise applications, data processing pipelines, or interactive systems, ForgeAsset provides the foundation you need for successful project implementation.
+## Overview
 
-ForgeAsset's key benefits include:
+This bot automates trading operations on Pumpswap to generate trading volume for your token. It performs continuous buy and sell operations to boost visibility and trading activity.
 
-* **High-performance architecture**: Leveraging optimized algorithms and efficient data structures for maximum performance.
-* **Modern development patterns**: Implementing contemporary software engineering practices and design patterns.
-* **Comprehensive testing**: Extensive test coverage ensuring reliability and maintainability.
+> **Note:** This script only shows the buy and sell feature as a demo.
 
-# Key Features
+## Updates
 
-* **Type-safe TypeScript development**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Modern async/await patterns**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Modular architecture design**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Comprehensive testing suite**: Advanced implementation with optimized performance and comprehensive error handling.
-* **Production-ready build system**: Advanced implementation with optimized performance and comprehensive error handling.
+Since the Pumpswap contract IDL has been updated with the creator vault concept introduced, this script has been updated accordingly to work with the latest contract version.
 
-# Technology Stack
+## Test Transactions
 
-* **Typescript**: Primary development language providing performance, reliability, and extensive ecosystem support.
-* **Modern tooling**: Utilizing contemporary development tools and frameworks for enhanced productivity.
-* **Testing frameworks**: Comprehensive testing infrastructure ensuring code quality and reliability.
+Here are test transaction hashes demonstrating buy and sell operations:
 
-# Installation
+- **Buy Transaction:** [View on Solscan](https://solscan.io/tx/EQaQHPRQVd3gjSRU6Apk7HnrB57oD4y45Gdj6QUW942FLQDMQku8LM7vWXW3bUiR5Fr7zdZaKL1dYx6fXqtvoGz)
+- **Sell Transaction:** [View on Solscan](https://solscan.io/tx/EQaQHPRQVd3gjSRU6Apk7HnrB57oD4y45Gdj6QUW942FLQDMQku8LM7vWXW3bUiR5Fr7zdZaKL1dYx6fXqtvoGz)
 
-To install ForgeAsset, follow these steps:
+## Screenshots
+
+### Buy Process
+
+![Screenshot_2](https://github.com/user-attachments/assets/d0e6b91b-132a-4bcc-9634-ff3813f084fb)
+
+### Sell Process
+
+![Screenshot_3](https://github.com/user-attachments/assets/a2c9e551-6443-435a-82e8-61c24eb54716)
+
+## Installation
 
 1. Clone the repository:
+```bash
+git clone https://github.com/vladmeeros/pumpswap-volume-bot.git
+cd pumpswap-volume-bot
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-2. Follow the installation instructions in the documentation for your specific environment.
+3. Configure your environment variables (create a `.env` file with your settings)
 
-# Configuration
+4. Run the bot:
+```bash
+npm start
+```
 
-ForgeAsset supports various configuration options to customize behavior and optimize performance for your specific use case. Configuration can be managed through environment variables, configuration files, or programmatic settings.
+## Technology Stack
 
-## # Configuration Options
+- **TypeScript** - Primary development language
+- **@coral-xyz/anchor** - Solana program framework
+- **@solana/web3.js** - Solana blockchain interaction
+- **@raydium-io/raydium-sdk** - Raydium SDK integration
 
-The following configuration parameters are available:
+## License
 
-* **Verbose Mode**: Enable detailed logging for debugging purposes
-* **Output Format**: Customize the output format (JSON, CSV, XML)
-* **Performance Settings**: Adjust memory usage and processing threads
-* **Network Settings**: Configure timeout and retry policies
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Contributing
+## Contributing
 
-Contributions to ForgeAsset are welcome and appreciated! We value community input and encourage developers to help improve this project.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## # How to Contribute
+## Disclaimer
 
-1. Fork the ForgeAsset repository.
-2. Create a new branch for your feature or fix.
-3. Implement your changes, ensuring they adhere to the project's coding standards and guidelines.
-4. Submit a pull request, providing a detailed description of your changes.
-
-## # Development Guidelines
-
-* Follow the existing code style and formatting conventions
-* Write comprehensive tests for new features
-* Update documentation when adding new functionality
-* Ensure all tests pass before submitting your pull request
-
-# License
-
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/szenled/ForgeAsset/blob/main/LICENSE) file for details.
+This bot is for educational and demonstration purposes only. Use at your own risk.
